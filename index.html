@@ -3,17 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Se Gráfico | Diseño e Impresión en Medellín</title>
+    <title>Se Gráfico | El Poder de lo Visual</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandCyan: '#00AEEF',
+                        brandDarkBlue: '#0F1826',
+                        brandCardBg: '#1A2536'
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f9; }
-        h1 { color: #333; }
-        p { color: #666; }
-        .btn { display: inline-block; padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 15px; }
+        body {
+            background-color: #0d131d;
+            background-image: radial-gradient(circle at 50% 20%, #1e2c40 0%, #0d131d 80%);
+            color: #ffffff;
+        }
+        .btn-hover {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-hover:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px -5px rgba(0, 174, 239, 0.4);
+        }
     </style>
 </head>
-<body>
-    <h1>Se Gráfico</h1>
-    <p>Diseño gráfico, impresión digital y soluciones publicitarias en Medellín.</p>
-    <a href="https://wa.me/tu-numero" class="btn">Contáctanos por WhatsApp</a>
+<body class="min-h-screen flex flex-col items-center justify-between p-4 sm:p-6 font-sans">
+
+    <!-- Container Principal -->
+    <div class="w-full max-w-md flex flex-col items-center text-center my-auto">
+        
+        <!-- Logo Header -->
+        <div class="mb-6 flex flex-col items-center">
+            <!-- Isotipo estilizado -->
+            <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white p-2 mb-4 shadow-lg shadow-cyan-500/20 flex items-center justify-center border-2 border-brandCyan">
+                <!-- SVG basado en la forma del logo SG -->
+                <svg viewBox="0 0 100 100" class="w-full h-full fill-brandCyan">
+                    <path d="M 50,10 C 30,10 20,25 20,38 C 20,50 35,48 50,48 C 65,48 80,45 80,38 C 80,20 65,10 50,10 Z M 20,55 L 20,90 L 80,90 L 80,75 L 40,75 L 40,65 L 75,65 C 78,65 80,60 80,55 Z" />
+                </svg>
+            </div>
+            
+            <h1 class="text-3xl sm:text-4xl font-black tracking-wider uppercase text-white">
+                SE<span class="text-brandCyan">.</span>GRÁFICO
+            </h1>
+            <p class="text-xs sm:text-sm font-bold tracking-widest text-brandCyan uppercase mt-1">
+                EL <span class="text-red-500">PODER</span> DE LO <span class="text-white">VISUAL</span>
+            </p>
+            <p class="text-xs text-slate-400 mt-2 flex items-center gap-1">
+                <i class="fa-solid fa-location-dot text-brandCyan"></i> Calle 71 # 65 - 207 Int. 9901, Medellín
+            </p>
+        </div>
+
+        <!-- Botones de Enlace (Linktree Style) -->
+        <div class="w-full flex flex-col gap-3.5 mb-8">
+            
+            <!-- WhatsApp Comercial -->
+            <a href="https://wa.me/573213353911?text=Hola%20Se%20Gr%C3%A1fico,%20quisiera%20cotizar%20un%20servicio" target="_blank" 
+               class="btn-hover w-full bg-gradient-to-r from-emerald-500 to-green-600 text-white font-bold py-3.5 px-6 rounded-2xl flex items-center justify-between shadow-lg">
+                <i class="fa-brands fa-whatsapp text-2xl"></i>
+                <span class="text-sm sm:text-base tracking-wide">Cotizar por WhatsApp</span>
+                <i class="fa-solid fa-chevron-right text-xs opacity-70"></i>
+            </a>
+
+            <!-- Portafolio / Galería -->
+            <a href="https://instagram.com/segrafico_" target="_blank" 
+               class="btn-hover w-full bg-brandCardBg border border-slate-700/60 hover:border-brandCyan text-white font-semibold py-3.5 px-6 rounded-2xl flex items-center justify-between">
+                <i class="fa-brands fa-instagram text-2xl text-pink-500"></i>
+                <span class="text-sm sm:text-base">Ver Trabajos en Instagram</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+            </a>
+
+            <!-- Ubicación Google Maps -->
+            <a href="https://maps.google.com" target="_blank" 
+               class="btn-hover w-full bg-brandCardBg border border-slate-700/60 hover:border-brandCyan text-white font-semibold py-3.5 px-6 rounded-2xl flex items-center justify-between">
+                <i class="fa-solid fa-map-location-dot text-2xl text-red-500"></i>
+                <span class="text-sm sm:text-base">Cómo Llegar (Google Maps)</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+            </a>
+
+            <!-- Enviar Correo -->
+            <a href="mailto:info.segrafico@gmail.com" 
+               class="btn-hover w-full bg-brandCardBg border border-slate-700/60 hover:border-brandCyan text-white font-semibold py-3.5 px-6 rounded-2xl flex items-center justify-between">
+                <i class="fa-solid fa-envelope text-2xl text-brandCyan"></i>
+                <span class="text-sm sm:text-base">Enviar Correo Electrónico</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://tiktok.com/@segrafico_" target="_blank" 
+               class="btn-hover w-full bg-brandCardBg border border-slate-700/60 hover:border-brandCyan text-white font-semibold py-3.5 px-6 rounded-2xl flex items-center justify-between">
+                <i class="fa-brands fa-tiktok text-2xl text-cyan-400"></i>
+                <span class="text-sm sm:text-base">Síguenos en TikTok</span>
+                <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+            </a>
+
+        </div>
+
+        <!-- Sección Informativa: Horario & Servicios -->
+        <div class="w-full bg-brandCardBg/80 backdrop-blur border border-slate-800 rounded-2xl p-5 text-left text-xs sm:text-sm text-slate-300">
+            <h3 class="text-brandCyan font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-clock"></i> Horario de Atención
+            </h3>
+            <p class="mb-1"><strong>Lunes a Viernes:</strong> 7:30 am – 7:00 pm</p>
+            <p class="mb-4"><strong>Sábados:</strong> 7:30 am – 3:00 pm</p>
+
+            <h3 class="text-brandCyan font-bold uppercase tracking-wider mb-2 flex items-center gap-2">
+                <i class="fa-solid fa-print"></i> Servicios Destacados
+            </h3>
+            <p class="text-slate-400 leading-relaxed">
+                Avisos en acrílico, pendones, vinilo adhesivo, tarjetas de presentación, litografía, volantes, cajas de luz y diseño gráfico profesional.
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-8 text-center text-xs text-slate-500">
+        <p>© 2026 Se Gráfico. Todos los derechos reservados.</p>
+        <p class="text-[10px] mt-1 text-slate-600">Medellín, Colombia</p>
+    </footer>
+
 </body>
 </html>

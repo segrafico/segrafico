@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE. GRÁFICO | El Poder de lo Visual</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            cyan: '#00acd8',
+                            cyanHover: '#0096ce',
+                            darkBlue: '#0B2545',
+                            darkerBlue: '#0A192F',
+                            lightBg: '#F8FAFC',
+                            textDark: '#0F172A',
+                            textMuted: '#475569'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(0, 174, 239, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-brand-lightBg text-brand-textDark font-sans antialiased selection:bg-brand-cyan selection:text-white relative">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Brand Logo -->
+                <a href="#" aria-label="SEGRÁFICO Inicio">
+                    <svg id="Capa_2" class="h-14 w-auto" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 138.85 65.06">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #00acd8;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Capa_1-2" data-name="Capa 1">
+                            <g>
+                                <path class="cls-1" d="m39.34,17.26h-7.57c-1.28-5.14-5.92-8.95-11.46-8.95s-10.17,3.81-11.46,8.95h-3.02c1.37-6.71,7.31-11.75,14.42-11.75,2.91,0,5.63.85,7.91,2.31,2.1,1.34,3.84,3.2,5.03,5.4.22.4.64.64,1.09.64h3.49c.89,0,1.49-.91,1.13-1.72-.69-1.55-1.56-3-2.59-4.32C32.6,3.06,26.82.01,20.32.01,10.14.01,1.71,7.49.23,17.26c-.15,1-.23,2.03-.23,3.08,0,.63.03,1.25.08,1.87.06.62.59,1.1,1.21,1.1h7.64c1.39,4.99,5.95,8.65,11.38,8.65s9.99-3.67,11.38-8.65h2.96c-1.42,6.65-7.32,11.64-14.4,11.64-2.91,0-5.63-.85-7.91-2.31-2.1-1.34-3.84-3.2-5.03-5.41-.21-.39-.63-.64-1.08-.64h-3.47c-.89,0-1.49.91-1.14,1.72.66,1.55,1.51,3,2.52,4.32.64.84,1.34,1.63,2.1,2.36,0,0,.07.07.19.19-.14.07-.26.2-.29.37L.32,63.28c-.16.77.43,1.5,1.21,1.5h37.56c.8,0,1.4-.74,1.23-1.52l-2.02-9.58-1.14-5.39c-.12-.57-.63-.98-1.21-.98h-8.28l-.75-3.52c-.08-.4-.44-.69-.85-.69h-11.52c-.41,0-.76.29-.85.69l-2.53,11.95c-.11.54.3,1.04.85,1.04h16.59c.55,0,.96-.51.85-1.04l-.44-2.06h2.73l1.15,5.43H7.65l3.89-18.49,7.08.03h1.25c.12,0,.24.02.36.02.11,0,.22-.01.33-.01h1.29s7.15.03,7.15.03l.31,1.48.53,2.48h4.99c.8,0,1.4-.74,1.23-1.52l-1.6-7.57c-.03-.16-.14-.29-.28-.36.05-.05.11-.09.16-.14h-.02c3.21-3.06,5.42-7.16,6.1-11.75.14-.97.22-1.96.22-2.96,0-.67-.03-1.34-.1-2-.06-.62-.58-1.08-1.2-1.08Z"/>
+                                <path class="cls-1" d="m83.7,32.03c1.14-1.14,1.14-2.99,0-4.13-1.14-1.14-2.99-1.14-4.13,0-1.14,1.14-1.14,2.99,0,4.13,1.14,1.14,2.99,1.14,4.13,0Z"/>
+                                <path class="cls-1" d="m57.16,35.31h-9.84c-.64,0-2.48,0-2.48,2.48v24.78c0,2.48,1.84,2.48,2.48,2.48h8.04c.64,0,2.48,0,2.48-2.48v-12.6c-.04-.39-.35-.71-.74-.71h-4.21c-.39,0-.71.32-.71.71v10.52h-1.7v-20.61h6.69c.39,0,.71-.32.71-.71v-3.15c0-.39-.32-.71-.71-.71Z"/>
+                                <path class="cls-1" d="m70.58,35.31h-9.88c-.39,0-.71.32-.71.71v28.32c0,.39.32.71.71.71h4.21c.39,0,.71-.32.71-.71v-11.9h1.7v11.9c0,.39.32.71.71.71h4.21c.39,0,.71-.32.71-.71v-11.47c0-2.48-1.77-2.48-2.41-2.48v-.18c.64,0,2.48,0,2.48-2.48v-9.95c0-2.44-1.81-2.48-2.44-2.48Zm-3.26,12.6h-1.7v-8.04h1.7v8.04Z"/>
+                                <path class="cls-1" d="m85.74,35.31h-8.14c-.64,0-2.44.04-2.44,2.48v26.55c0,.39.32.71.71.71h4.21c.39,0,.71-.32.71-.71v-9.77h1.7v9.77c0,.39.32.71.71.71h4.21c.39,0,.71-.32.71-.71v-26.7c0-2.3-1.74-2.34-2.37-2.34Zm-3.26,14.73h-1.7v-10.16h1.7v10.16Z"/>
+                                <path class="cls-1" d="m101.53,35.31h-10.52c-.39,0-.71.32-.71.71v28.33c0,.39.32.71.71.71h4.21c.39,0,.71-.32.71-.71v-9.77h4.53c.39,0,.71-.32.71-.71v-3.47c0-.39-.32-.71-.71-.71h-4.53v-9.81h5.56c.39,0,.71-.32.71-.71v-3.15c0-.43-.32-.71-.67-.71Z"/>
+                                <rect class="cls-1" x="103.9" y="35.31" width="5.63" height="29.74" rx=".71" ry=".71"/>
+                                <path class="cls-1" d="m123.55,60.49h-6.27v-20.61h5.91c.39,0,.71-.32.71-.71v-3.15c0-.43-.32-.71-.67-.71h-9.1c-.64,0-2.48,0-2.48,2.48v24.79c0,2.48,1.84,2.48,2.48,2.48h9.45c.39,0,.71-.32.71-.71v-3.15c-.04-.39-.35-.71-.74-.71Z"/>
+                                <path class="cls-1" d="m136.4,35.31h-8.14c-.67,0-2.41.07-2.41,2.48v24.78c0,2.44,1.81,2.48,2.44,2.48h8.11c.64,0,2.44-.04,2.44-2.48v-24.78c0-2.44-1.81-2.48-2.44-2.48Zm-3.22,25.17h-1.7v-20.61h1.7v20.61Z"/>
+                                <path class="cls-1" d="m45.71,32.46h8.73c.7,0,2.67-.04,2.67-2.7v-13.29c0-2.67-1.93-2.71-2.63-2.71h-3.4V4.98h5.68c.43,0,.77-.35.77-.77V.77C57.54.35,57.19,0,56.77,0h-9.16c-.7,0-2.67.04-2.67,2.67v13.56c0,2.67,1.97,2.7,2.67,2.7h3.4v8.08h-5.29c-.43,0-.77.35-.77.77v3.9c0,.43.35.77.77.77Z"/>
+                                <path class="cls-1" d="m60.63,32.46h11.28c.42,0,.77-.35.77-.77v-3.44c-.04-.43-.39-.77-.81-.77h-5.87v-9.16h3.98c.43,0,.77-.35.77-.77v-3.79c0-.43-.35-.77-.77-.77h-3.98v-8h5.87c.43,0,.77-.35.77-.77V.77c0-.46-.35-.77-.73-.77h-11.28c-.43,0-.77.35-.77.77v30.92c0,.43.35.77.77.77Z"/>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                    <a href="#inicio" class="text-brand-textDark hover:text-brand-cyan transition-colors">Inicio</a>
+                    <a href="#nosotros" class="text-brand-textDark hover:text-brand-cyan transition-colors">Sobre Nosotros</a>
+                    <a href="#servicios" class="text-brand-textDark hover:text-brand-cyan transition-colors">Servicios</a>
+                    <a href="#proceso" class="text-brand-textDark hover:text-brand-cyan transition-colors">Proceso</a>
+                    <a href="#contacto" class="text-brand-textDark hover:text-brand-cyan transition-colors">Contacto</a>
+                </nav>
+
+                <!-- Header CTA Button -->
+                <div class="hidden md:flex items-center">
+                    <a href="https://wa.me/573213353911?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-medium px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all duration-300 text-sm">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" type="button" class="text-brand-textDark hover:text-brand-cyan focus:outline-none p-2" aria-label="Abrir Menú">
+                        <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-nav-link block py-2 text-base font-medium text-brand-textDark hover:text-brand-cyan border-b border-slate-50">Inicio</a>
+            <a href="#nosotros" class="mobile-nav-link block py-2 text-base font-medium text-brand-textDark hover:text-brand-cyan border-b border-slate-50">Sobre Nosotros</a>
+            <a href="#servicios" class="mobile-nav-link block py-2 text-base font-medium text-brand-textDark hover:text-brand-cyan border-b border-slate-50">Servicios</a>
+            <a href="#proceso" class="mobile-nav-link block py-2 text-base font-medium text-brand-textDark hover:text-brand-cyan border-b border-slate-50">Proceso</a>
+            <a href="#contacto" class="mobile-nav-link block py-2 text-base font-medium text-brand-textDark hover:text-brand-cyan">Contacto</a>
+            <a href="https://wa.me/573213353911?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="flex items-center justify-center gap-2 w-full bg-emerald-500 text-white font-medium px-4 py-3 rounded-xl shadow-sm mt-4">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span>Contactar por WhatsApp</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-32 pb-20 lg:pt-44 lg:pb-32 bg-gradient-to-b from-slate-50 via-white to-brand-lightBg overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            
+            <!-- Subtle background decorative blobs -->
+            <div class="absolute -top-10 -right-10 w-96 h-96 bg-brand-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute bottom-0 -left-10 w-80 h-80 bg-brand-darkBlue/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="text-center max-w-3xl mx-auto space-y-8 relative z-10">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cyan-50 border border-cyan-200 text-brand-cyan text-xs sm:text-sm font-semibold tracking-wide uppercase">
+                    <span class="w-2 h-2 rounded-full bg-brand-cyan animate-pulse"></span>
+                    Tu aliado estratégico en Medellín
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight text-brand-cyan">
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-600">
+                        El Poder de lo Visual
+                    </span>
+                </h1>
+
+                <p class="text-lg sm:text-xl text-brand-textMuted font-normal leading-relaxed max-w-2xl mx-auto">
+                    Tú aliado de confianza en diseño, publicidad e impresión P.O.P. Impulsamos el impacto de tu marca con acabados de alta calidad.
+                </p>
+
+                <!-- Hero Action Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="https://wa.me/573213353911?text=Hola,%20deseo%20solicitar%20una%20cotización." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-brand-cyan hover:bg-brand-cyanHover text-white font-semibold px-8 py-4 rounded-2xl shadow-lg glow-effect transition-all duration-300 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-xl"></i>
+                        <span>Cotizar Ahora</span>
+                    </a>
+                    <a href="#servicios" 
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-50 text-brand-darkerBlue font-semibold px-8 py-4 rounded-2xl border border-slate-200 shadow-sm transition-all duration-300 hover:border-slate-300">
+                        <span>Ver Servicios</span>
+                        <i class="fa-solid fa-arrow-down text-sm text-brand-textMuted"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-20 bg-brand-darkerBlue text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-12 space-y-6">
+                    <div class="inline-block px-3 py-1 bg-brand-cyan/20 text-brand-cyan rounded-md text-xs font-bold uppercase tracking-wider">
+                        Sobre Nosotros
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white leading-tight">
+                        Transformamos tus ideas en experiencias visuales de alto impacto
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        Somos una empresa dedicada al desarrollo e impresión de medios digitales, tanto para el desarrollo de marca como aplicaciones corporativas, así mismo como creación de material P.O.P. (point of publishing) y suministro de material impreso.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed text-base sm:text-lg">
+                        Nuestro objetivo es brindarle a nuestros clientes la mayor confianza que pueden depositar en nosotros y agradecerles por hacernos parte de sus sueños, convirtiendo en realidad sus metas con nuestros servicios.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-24 bg-brand-lightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-darkerBlue tracking-tight">
+                    Nuestros Servicios
+                </h2>
+                <p class="text-brand-textMuted text-base sm:text-lg">
+                    Soluciones integrales de diseño e impresión con tecnología de vanguardia y los mejores materiales.
+                </p>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Impresión Litográfica</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Realizamos impresiones de la más alta calidad para su material corporativo o publicitario: volantes, tarjetas de presentación, carpetas, cuadernos y papelería comercial.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">MÁXIMA PRECISIÓN</span>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-expand"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Gran Formato</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Avisos comerciales, pasacalles, vinilos decorativos, pancartas y banners personalizados que garantizan visibilidad absoluta y colores impactantes.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">ALTA VISIBILIDAD</span>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-cubes"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Estructuras & Montajes</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Nuestro equipo técnico está siempre preparado para instalar tus estructuras a tiempo, haciéndote visible en puntos comerciales y fachadas de manera segura.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">INSTALACIÓN TÉCNICA</span>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Diseño Gráfico</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Creación de identidad corporativa, logotipos y manuales de marca. Damos vida a tus ideas para impulsar tu negocio o emprendimiento hacia el siguiente nivel.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">CREATIVIDAD Y MARCA</span>
+                    </div>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-bezier-curve"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Asesoría & Vectorización</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Optimizamos y rediseñamos tus archivos gráficos para cualquier tipo de impresión. Te asesoramos en la selección óptima de materiales y formatos.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">ASESORÍA ESPECIALIZADA</span>
+                    </div>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 flex flex-col justify-between group">
+                    <div class="space-y-4">
+                        <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-brand-cyan flex items-center justify-center text-2xl group-hover:bg-brand-cyan group-hover:text-white transition-colors duration-300">
+                            <i class="fa-solid fa-gift"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-brand-darkerBlue">Personalizados & P.O.P.</h3>
+                        <p class="text-brand-textMuted text-sm leading-relaxed">
+                            Personalización de vinilos para electrodomésticos, señalética corporativa, souvenirs y material promocional único para fidelizar a tus clientes.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-6 border-t border-slate-100">
+                        <span class="text-xs font-semibold text-brand-cyan uppercase tracking-wider">SOLUCIONES A MEDIDA</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Process Section -->
+    <section id="proceso" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-20">
+                <div class="inline-block px-3 py-1 bg-cyan-50 text-brand-cyan rounded-md text-xs font-bold uppercase tracking-wider">
+                    Metodología
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-darkerBlue tracking-tight">
+                    Nuestro Proceso de Trabajo
+                </h2>
+                <p class="text-brand-textMuted text-base">
+                    Garantizamos agilidad y satisfacción total paso a paso en cada proyecto.
+                </p>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid md:grid-cols-3 gap-8 relative">
+                
+                <!-- Step 1 -->
+                <div class="relative bg-brand-lightBg rounded-2xl p-8 border border-slate-100 shadow-sm text-center md:text-left space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan text-white font-extrabold text-xl flex items-center justify-center mx-auto md:mx-0 shadow-md">
+                        01
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkerBlue">La Idea</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        Todo comienza con tu idea de crecimiento. Escuchamos tus necesidades y damos forma a tus sueños hasta convertirlos en una propuesta sólida.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="relative bg-brand-lightBg rounded-2xl p-8 border border-slate-100 shadow-sm text-center md:text-left space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan text-white font-extrabold text-xl flex items-center justify-center mx-auto md:mx-0 shadow-md">
+                        02
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkerBlue">Producción</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        Realizamos la producción de tu pedido siempre bajo la aprobación previa del diseño, garantizando máxima fidelidad en acabados y colores.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="relative bg-brand-lightBg rounded-2xl p-8 border border-slate-100 shadow-sm text-center md:text-left space-y-4">
+                    <div class="w-12 h-12 rounded-xl bg-brand-cyan text-white font-extrabold text-xl flex items-center justify-center mx-auto md:mx-0 shadow-md">
+                        03
+                    </div>
+                    <h3 class="text-xl font-bold text-brand-darkerBlue">Instalación</h3>
+                    <p class="text-brand-textMuted text-sm leading-relaxed">
+                        No solo producimos, también instalamos. Hacemos realidad la instalación final en tu espacio para asegurar que tu marca destaque por completo.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Information Section -->
+    <section id="contacto" class="py-24 bg-slate-900 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                
+                <!-- Contact info details -->
+                <div class="space-y-8">
+                    <div>
+                        <span class="text-brand-cyan font-bold uppercase tracking-wider text-xs">Contacto Directo</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">
+                            Hablemos de tu próximo proyecto
+                        </h2>
+                        <p class="text-slate-400 mt-3 text-base">
+                            Estamos listos para asesorarte y ofrecerte la mejor solución en diseño e impresión.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Email -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-brand-cyan flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-400">Correo Electrónico</h4>
+                                <a href="mailto:info.segrafico@gmail.com" class="text-lg font-medium text-white hover:text-brand-cyan transition-colors">
+                                    info.segrafico@gmail.com
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Address -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-brand-cyan flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-400">Ubicación</h4>
+                                <p class="text-lg font-medium text-white">
+                                    Calle 71 # 65 - 207 Int. 9901, Medellín
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-slate-800 border border-slate-700 text-brand-cyan flex items-center justify-center text-xl shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-sm font-semibold text-slate-400">Teléfonos de Atención</h4>
+                                <div class="flex flex-col sm:flex-row sm:gap-4 text-lg font-medium text-white">
+                                    <a href="tel:3213353911" class="hover:text-brand-cyan transition-colors">321 335 3911</a>
+                                    <span class="hidden sm:inline text-slate-600">|</span>
+                                    <a href="tel:6043665026" class="hover:text-brand-cyan transition-colors">604 366 5026</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Networks -->
+                    <div class="pt-6 border-t border-slate-800 space-y-3">
+                        <h4 class="text-sm font-semibold text-slate-400">Síguenos en Redes Sociales</h4>
+                        <div class="flex items-center gap-3">
+                            <a href="https://www.instagram.com/segrafico_" aria-label="Instagram" class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-brand-cyan hover:border-brand-cyan flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-instagram text-lg"></i>
+                            </a>
+                            <a href="https://tiktok.com/@segrafico_" aria-label="TikTok" class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-brand-cyan hover:border-brand-cyan flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-tiktok text-lg"></i>
+                            </a>
+                            <a href="#" aria-label="Facebook" class="w-10 h-10 rounded-lg bg-slate-800 border border-slate-700 text-slate-300 hover:text-white hover:bg-brand-cyan hover:border-brand-cyan flex items-center justify-center transition-all">
+                                <i class="fa-brands fa-facebook-f text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Quick Action Box / WhatsApp Card -->
+                <div class="bg-slate-800/80 border border-slate-700 p-8 sm:p-10 rounded-3xl space-y-6 shadow-xl">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-3xl">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">¿Necesitas una respuesta rápida?</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Escríbenos directamente a través de WhatsApp. Te responderemos en el menor tiempo posible para atender tu solicitud o cotización.
+                    </p>
+                    <a href="https://wa.me/573213353911?text=Hola,%20quisiera%20consultar%20sobre%20un%20proyecto." 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="inline-flex items-center justify-center gap-3 w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-emerald-500/20 transition-all duration-300 text-center">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i>
+                        <span>Enviar mensaje por WhatsApp</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 text-slate-400 py-12 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-3">
+                    <p class="text-sm">
+                        &copy; <span id="current-year"></span> <strong class="text-white">SEGRÁFICO</strong>. Todos los derechos reservados.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-6 text-sm">
+                    <a href="#inicio" class="hover:text-brand-cyan transition-colors">Inicio</a>
+                    <a href="#nosotros" class="hover:text-brand-cyan transition-colors">Nosotros</a>
+                    <a href="#servicios" class="hover:text-brand-cyan transition-colors">Servicios</a>
+                    <a href="#contacto" class="hover:text-brand-cyan transition-colors">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/573213353911?text=Hola,%20me%20gustaría%20solicitar%20información." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all duration-300 group"
+       aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <!-- Tooltip on hover -->
+        <span class="absolute right-16 bg-slate-900 text-white text-xs px-3 py-1.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+            ¡Escríbenos ahora!
+        </span>
+    </a>
+
+    <!-- JavaScript for Interactive Behaviors -->
+    <script>
+        // Set dynamic current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile Menu Toggle Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        function toggleMenu() {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuIcon.classList.remove('fa-bars');
+                menuIcon.classList.add('fa-xmark');
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('fa-xmark');
+                menuIcon.classList.add('fa-bars');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        // Auto close mobile menu when clicking a navigation link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (!mobileMenu.classList.contains('hidden')) {
+                    toggleMenu();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
